@@ -48,6 +48,8 @@ class AdapterReciclerChats ( var lista:ArrayList<ContactosDelChat>) :RecyclerVie
     override fun getItemCount(): Int {
         var cantidadDeItem=lista.size
         return cantidadDeItem
+
+
     }
 
 

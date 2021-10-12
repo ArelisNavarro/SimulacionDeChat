@@ -5,12 +5,19 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.core.view.isVisible
+import androidx.fragment.app.FragmentManager
+import androidx.recyclerview.widget.DividerItemDecoration
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import java.text.FieldPosition
 
 class PantallaInicial : Fragment(){
 
+
+    lateinit var recicler:RecyclerView
+
+     lateinit var manager: FragmentManager
 
     var lista= arrayListOf<ContactosDelChat>(
 
@@ -47,19 +54,33 @@ class PantallaInicial : Fragment(){
 
         var layaout=LinearLayoutManager(context,RecyclerView.VERTICAL,false)
 
-        var recicler=view.findViewById<RecyclerView>(R.id.rvReciclerChats)
+
+        recicler=view.findViewById<RecyclerView>(R.id.rvReciclerChats)
 
 
         recicler.adapter=adaptador
 
         recicler.layoutManager=layaout
 
+        recicler.addItemDecoration(DividerItemDecoration(context,RecyclerView.HORIZONTAL))
+
         adaptador.clikItem = {item, posicion -> irAlChat(item,posicion,"hola")       }
+
+
     }
+
+
 
     fun irAlChat(item:ContactosDelChat,position: Int,hola:String){
 
+        var fragmento:Fragment=BlackFragment()
 
+        manager= requireActivity().supportFragmentManager
+
+       var transition=manager?.beginTransaction()
+        transition?.replace(R.id.contenedorDeFragment,fragmento)
+        transition.addToBackStack(null)
+        transition.commit()
 
     }
 
