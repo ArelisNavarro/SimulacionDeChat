@@ -1,15 +1,22 @@
 package com.example.simulaciondechat
 
 import android.os.Bundle
+import android.text.Editable
+import android.text.TextWatcher
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.EditText
+import android.widget.SearchView
+import android.widget.Toast
+import androidx.activity.OnBackPressedCallback
 import androidx.core.view.isVisible
 import androidx.fragment.app.FragmentManager
 import androidx.recyclerview.widget.DividerItemDecoration
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.google.android.material.internal.TextWatcherAdapter
 import java.text.FieldPosition
 
 class PantallaInicial : Fragment(){
@@ -19,18 +26,21 @@ class PantallaInicial : Fragment(){
 
      lateinit var manager: FragmentManager
 
+     lateinit var editextBuscar:EditText
+
+
     var lista= arrayListOf<ContactosDelChat>(
 
         ContactosDelChat(1,"Eric",""),
-        ContactosDelChat(2,"Diego",""),
-        ContactosDelChat(3,"Yilbert",""),
-        ContactosDelChat(4,"Mami",""),
-        ContactosDelChat(5,"luis",""),
-        ContactosDelChat(6,"Eric",""),
-        ContactosDelChat(7,"Eric",""),
-        ContactosDelChat(8,"Eric",""),
-        ContactosDelChat(9,"Eric",""),
-        ContactosDelChat(10,"Eric","")
+        ContactosDelChat(2,"Ediego",""),
+        ContactosDelChat(3,"EYilbert",""),
+        ContactosDelChat(4,"EMami",""),
+        ContactosDelChat(5,"Eluis",""),
+        ContactosDelChat(6,"Ejuana",""),
+        ContactosDelChat(7,"adriana",""),
+        ContactosDelChat(8,"wey",""),
+        ContactosDelChat(9,"eeric",""),
+        ContactosDelChat(10,"edwion","")
     )
 
 
@@ -50,13 +60,37 @@ class PantallaInicial : Fragment(){
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
 
-        var adaptador=AdapterReciclerChats(lista)
+        var adaptador=AdapterReciclerChats()
 
         var layaout=LinearLayoutManager(context,RecyclerView.VERTICAL,false)
 
 
         recicler=view.findViewById<RecyclerView>(R.id.rvReciclerChats)
 
+        editextBuscar =view.findViewById<EditText>(R.id.searchView)
+
+        adaptador.setListaContactos(lista)
+
+        var listener=object : TextWatcher{
+            override fun beforeTextChanged(s: CharSequence?, start: Int, count: Int, after: Int) {
+
+
+            }
+
+            override fun onTextChanged(s: CharSequence?, start: Int, before: Int, count: Int) {
+
+
+            }
+
+            override fun afterTextChanged(s: Editable?) {
+                      var lista=  lista.filter { i -> i.Nombre.lowercase().contains(s.toString().lowercase()) }
+                adaptador.setListaContactos(lista)
+
+            }
+
+        }
+
+            editextBuscar.addTextChangedListener(listener)
 
         recicler.adapter=adaptador
 
@@ -64,7 +98,8 @@ class PantallaInicial : Fragment(){
 
         recicler.addItemDecoration(DividerItemDecoration(context,RecyclerView.HORIZONTAL))
 
-        adaptador.clikItem = {item, posicion -> irAlChat(item,posicion,"hola")       }
+        adaptador.clikItem = {item, posicion -> irAlChat(item,posicion,"hola")}
+
 
 
     }
@@ -83,7 +118,6 @@ class PantallaInicial : Fragment(){
         transition.commit()
 
     }
-
 
 
 }

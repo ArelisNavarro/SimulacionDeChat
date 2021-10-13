@@ -8,9 +8,9 @@ import android.view.ViewGroup
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 
-class AdapterReciclerChats ( var lista:ArrayList<ContactosDelChat>) :RecyclerView.Adapter<AdapterReciclerChats.MiViewHolder>(){
+class AdapterReciclerChats:RecyclerView.Adapter<AdapterReciclerChats.MiViewHolder>(){
 
-
+    var lista:List<ContactosDelChat> = ArrayList();
     var clikItem: (item : ContactosDelChat,posicion:Int)->Unit={ item, posicion -> }
 
 
@@ -50,6 +50,14 @@ class AdapterReciclerChats ( var lista:ArrayList<ContactosDelChat>) :RecyclerVie
         return cantidadDeItem
 
 
+    }
+
+
+
+    fun setListaContactos(lista:List<ContactosDelChat>){
+
+        this.lista=lista;
+        notifyDataSetChanged()
     }
 
 
