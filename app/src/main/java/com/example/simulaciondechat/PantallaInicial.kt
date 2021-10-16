@@ -16,6 +16,7 @@ import androidx.fragment.app.FragmentManager
 import androidx.recyclerview.widget.DividerItemDecoration
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.example.simulaciondechat.fragmrnts.Fragmentchat
 import com.google.android.material.internal.TextWatcherAdapter
 import java.text.FieldPosition
 
@@ -108,7 +109,7 @@ class PantallaInicial : Fragment(){
 
     fun irAlChat(item:ContactosDelChat,position: Int,hola:String){
 
-        var fragmento:Fragment=BlackFragment()
+        var fragmento:Fragment= Fragmentchat()
 
         manager= requireActivity().supportFragmentManager
 

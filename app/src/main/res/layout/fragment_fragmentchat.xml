@@ -4,35 +4,22 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#B8B6B6"
+    android:background="#BE50088F"
     tools:context=".fragmrnts.Fragmentchat">
-
-    <LinearLayout
-        android:id="@+id/linearLayout6"
-        android:layout_width="14dp"
-        android:layout_height="564dp"
-
-        android:background="?attr/colorPrimary"
-        android:orientation="vertical"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout2"></LinearLayout>
 
     <EditText
         android:id="@+id/editexDemensaje"
         android:layout_width="279dp"
         android:layout_height="58dp"
-        android:backgroundTint="#040404"
         android:ems="10"
         android:inputType="textEmailAddress"
         android:textSize="@dimen/hrloe"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.14"
+        app:layout_constraintHorizontal_bias="0.159"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.976"
+        app:layout_constraintVertical_bias="0.977"
         tools:ignore="SpeakableTextPresentCheck" />
 
     <Button
@@ -128,17 +115,6 @@
         app:layout_constraintVertical_bias="0.982"></LinearLayout>
 
     <LinearLayout
-        android:id="@+id/linearLayout7"
-        android:layout_width="14dp"
-        android:layout_height="564dp"
-        android:background="#070707"
-        android:orientation="vertical"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout2"></LinearLayout>
-
-    <LinearLayout
         android:id="@+id/linearLayout5"
         android:layout_width="413dp"
         android:layout_height="24dp"
@@ -177,11 +153,14 @@
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/reciclador"
-        android:layout_width="305dp"
-        android:layout_height="387dp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="16dp"
+        android:background="#B76ABCC6"
+        android:padding="16dp"
         app:layout_constraintBottom_toTopOf="@+id/raya"
-        app:layout_constraintEnd_toStartOf="@+id/linearLayout6"
-        app:layout_constraintStart_toEndOf="@+id/linearLayout7"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout2" />
 
     <Button
