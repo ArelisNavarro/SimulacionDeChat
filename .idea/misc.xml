@@ -11,6 +11,17 @@
     </option>
   </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+        <entry key="..\:/Users/Eric Navarro/OneDrive/Escritorio/SimulacionDeChat/app/src/main/res/layout/activity_main.xml" value="0.35625" />
+        <entry key="..\:/Users/Eric Navarro/OneDrive/Escritorio/SimulacionDeChat/app/src/main/res/layout/fragment_fragmentchat.xml" value="0.35625" />
+        <entry key="..\:/Users/Eric Navarro/OneDrive/Escritorio/SimulacionDeChat/app/src/main/res/layout/itemdeentrada.xml" value="0.35625" />
+        <entry key="..\:/Users/Eric Navarro/OneDrive/Escritorio/SimulacionDeChat/app/src/main/res/layout/itemdesalida.xml" value="0.35625" />
+        <entry key="..\:/Users/eric.navarro/Desktop/PROJARELIS/SimulacionDeChat/app/src/main/res/layout/activity_main.xml" value="0.1953125" />
+        <entry key="..\:/Users/eric.navarro/Desktop/PROJARELIS/SimulacionDeChat/app/src/main/res/layout/fragment_fragmentchat.xml" value="0.209375" />
+        <entry key="..\:/Users/eric.navarro/Desktop/PROJARELIS/SimulacionDeChat/app/src/main/res/layout/itemdechatluis.xml" value="0.209375" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>
   <component name="ProjectType">

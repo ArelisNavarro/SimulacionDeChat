@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#B8B6B6"
+    tools:context=".fragmrnts.Fragmentchat">
+
+    <LinearLayout
+        android:id="@+id/linearLayout6"
+        android:layout_width="14dp"
+        android:layout_height="564dp"
+
+        android:background="?attr/colorPrimary"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2"></LinearLayout>
+
+    <EditText
+        android:id="@+id/editexDemensaje"
+        android:layout_width="279dp"
+        android:layout_height="58dp"
+        android:backgroundTint="#040404"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        android:textSize="@dimen/hrloe"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.14"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.976"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <Button
+        android:id="@+id/btEnviar"
+        android:layout_width="88dp"
+        android:layout_height="54dp"
+        android:backgroundTint="#232323"
+        android:text="ENVIAR"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.11"
+        app:layout_constraintStart_toEndOf="@+id/editexDemensaje"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.977" />
+
+    <TextView
+        android:id="@+id/nomDelcontacto"
+        android:layout_width="280dp"
+        android:layout_height="37dp"
+        android:background="#B6AFAF"
+        android:backgroundTint="#A1A2A5"
+        android:gravity="center"
+        android:text="NOMBRE DE LA PERSONA"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.023" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="414dp"
+        android:layout_height="37dp"
+        android:background="#090909"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/editexDemensaje"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nomDelcontacto"
+        app:layout_constraintVertical_bias="0.0"></LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/raya"
+        android:layout_width="422dp"
+        android:layout_height="14dp"
+        android:background="#090909"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/editexDemensaje"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2"
+        app:layout_constraintVertical_bias="0.998"></LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="13dp"
+        android:layout_height="82dp"
+        android:background="#050505"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2"
+        app:layout_constraintVertical_bias="1.0"></LinearLayout>
+
+    <LinearLayout
+        android:layout_width="401dp"
+        android:layout_height="12dp"
+        android:background="#050505"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2"
+        app:layout_constraintVertical_bias="1.0"></LinearLayout>
+
+    <LinearLayout
+        android:layout_width="13dp"
+        android:layout_height="65dp"
+        android:background="#090909"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2"
+        app:layout_constraintVertical_bias="0.982"></LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout7"
+        android:layout_width="14dp"
+        android:layout_height="564dp"
+        android:background="#070707"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2"></LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout5"
+        android:layout_width="413dp"
+        android:layout_height="24dp"
+        android:background="#090909"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/nomDelcontacto"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"></LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout8"
+        android:layout_width="18dp"
+        android:layout_height="42dp"
+        android:background="#070707"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="@+id/nomDelcontacto"
+        app:layout_constraintEnd_toStartOf="@+id/nomDelcontacto"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/nomDelcontacto"
+        app:layout_constraintVertical_bias="0.0"></LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout9"
+        android:layout_width="19dp"
+        android:layout_height="37dp"
+        android:background="#090909"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="@+id/nomDelcontacto"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/nomDelcontacto"
+        app:layout_constraintTop_toTopOf="@+id/nomDelcontacto"
+        app:layout_constraintVertical_bias="0.0"></LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/reciclador"
+        android:layout_width="305dp"
+        android:layout_height="387dp"
+        app:layout_constraintBottom_toTopOf="@+id/raya"
+        app:layout_constraintEnd_toStartOf="@+id/linearLayout6"
+        app:layout_constraintStart_toEndOf="@+id/linearLayout7"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2" />
+
+    <Button
+        android:id="@+id/volveratras"
+        android:layout_width="42dp"
+        android:layout_height="39dp"
+        android:backgroundTint="#0B0A0A"
+        android:text="Button"
+        app:layout_constraintBottom_toBottomOf="@+id/linearLayout8"
+        app:layout_constraintEnd_toStartOf="@+id/linearLayout8"
+        app:layout_constraintHorizontal_bias="0.66"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.8"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <Button
+        android:id="@+id/siguienteContacto"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:backgroundTint="#0B0B0B"
+        android:text="Button"
+        app:layout_constraintBottom_toBottomOf="@+id/linearLayout9"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/linearLayout9"
+        app:layout_constraintTop_toTopOf="@+id/linearLayout9"
+        tools:ignore="TouchTargetSizeCheck" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

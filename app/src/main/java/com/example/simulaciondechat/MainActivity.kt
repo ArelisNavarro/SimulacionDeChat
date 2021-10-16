@@ -14,9 +14,5 @@ class MainActivity : AppCompatActivity() {
         var containerFragment= findViewById<FragmentContainerView>(R.id.contenedorDeFragment)
 
 
-
-
-
-
     }
 }
